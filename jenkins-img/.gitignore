@@ -3,4 +3,3 @@
 
 #ignore packer cache files
 **/packer-cach*
-jenkins-img/packer-cache/*
