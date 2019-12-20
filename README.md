@@ -1,2 +1,0 @@
-# MyPacker
-Packer Images

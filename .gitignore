@@ -1,5 +1,5 @@
 #ignore packer output files
-output-*
+**/output-*
 
 #ignore packer cache files
-packer-cache/
+**/packer-cache/
