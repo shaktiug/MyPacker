@@ -2,4 +2,4 @@
 **/output-*
 
 #ignore packer cache files
-packer-cache
+**/packer-cach*
