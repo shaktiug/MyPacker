@@ -1,0 +1,28 @@
+{
+"builders": [
+{
+    "type": "vmware-iso",
+    "iso_url": "http://mirrors.praction.in/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-Minimal-1908.iso",
+    "iso_checksum": "9a2c47d97b9975452f7d582264e9fc16d108ed8252ac6816239a3b58cef5c53d",
+    "iso_checksum_type": "sha256",
+    "headless": "true",
+    "cpus": 1,
+    "memory": 2048,
+    "disk_size": 20000,
+    "floppy_files": [
+        "rhel7ks.cfg"
+      ],
+    "boot_command": "<tab> inst.text inst.ks=hd:fd0:/rhel7ks.cfg <enter><wait>",
+    "ssh_username": "root",
+    "ssh_password": "packer",
+    "ssh_timeout": "20m",
+    "shutdown_command": "shutdown -P now"
+}
+],
+"provisioners": [
+{
+    "type": "shell",
+    "script": "jenkins.sh"
+}
+]
+}

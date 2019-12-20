@@ -1,0 +1,5 @@
+#ignore packer output files
+**/output-*
+
+#ignore packer cache files
+**/packer-cach*
